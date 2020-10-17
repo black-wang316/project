@@ -1,0 +1,118 @@
+.top{
+    width: 990px;
+    margin: 20px auto 10px;
+    padding-top: 10px;    
+}
+
+.content{
+    width: 850px;
+    height: 430px;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+}
+.ri{
+    margin-left: 50px;
+    float: left;
+}
+.ri h2{
+    float: left;
+    font-weight: bold;
+}
+
+@mixin right{
+    clear: both;
+    width: 385px;
+    height: 317px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px #F5F5F5;
+    input{
+       margin-top: 10px;
+       border: solid 1px #ccc;
+       width: 232px;
+       height: 25px;
+       background: #fff;
+   }
+   input:first-of-type{
+       margin-top: 50px;
+   }
+   p{
+    font-size: 14px;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+    }
+    p:first-of-type{
+        margin-top: 50px;
+    }
+.txt{
+    font-size: 16px;
+    margin-left: 90px;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+}
+input:nth-of-type(4){
+    color: #fff;
+    margin-left: 150px;
+    width: 90px;
+    height: 38px;
+    background-image: linear-gradient(to right,rgb(255, 72, 0),orange,orange,rgb(255, 72, 0))}
+}
+.right{
+    @include right;
+}
+
+@mixin bottom {
+    width: 990px;
+    height: 51px;
+    margin:  0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #777;
+    border-top: solid 2px #ce3c3b;
+    ul{
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    ul>li{
+        float: left;
+        width: 100px;
+        padding: 0 5px;
+        margin-top: 5px;
+        font-size: 12px;
+        height: 16px;
+        line-height: 16px;
+    }
+    ul>li:hover a{
+        color: red;
+        text-decoration: underline;
+    }
+}
+.bottom{
+    @include bottom;
+}
+.footer{
+    width: 550px;
+    margin: 0 auto;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer a{
+    color: #777;
+    font-size: 12px;
+}
+.footer span{
+    font-size: 20px;
+    color: #c00;
+    font-weight: 700;
+}
+.footer a:hover{
+    color: red;
+    text-decoration: underline;
+}

@@ -1,0 +1,156 @@
+.top{
+    width: 990px;
+    margin: 20px auto 10px;
+    padding-top: 10px;    
+}
+.content{
+    width: 990px;
+    margin: 0 auto;
+}
+.fanhui{
+    margin:0 auto;
+    width:780px;
+    height:30px;text-align:right;
+    padding-right:10px;
+}
+.fanhui a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.content_center{
+    // margin: 0 auto;
+    width: 990px;
+    height: 440px;
+    margin-top: 10px;
+}
+.content_center form{
+    width: 780px;
+    height: 440px;
+    margin: 0 auto;
+    border: solid 2px #ccc;
+}
+.left{
+    width: 400px;
+    height: 300px;
+    float: left;    
+    margin-left: 100px;
+    margin-top: 50px;
+    border-right: dashed 1px #ccc;
+}
+.left p{
+    font-size: 14px;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.left input{
+    margin-top: 10px;
+    border: solid 1px #ccc;
+    width: 232px;
+    height: 25px;
+}
+.left input:nth-of-type(4){
+    width: 71px;
+}
+.left input:nth-of-type(5){
+    width: 13px;
+    height: 13px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.left a{
+    color: blue;
+    text-decoration: underline;
+}
+.txt{
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.left input:nth-of-type(6){
+    color: #fff;
+    margin-left: 100px;
+    width: 90px;
+    height: 38px;
+    background-image: linear-gradient(to right,rgb(255, 72, 0),orange,orange,rgb(255, 72, 0))}
+    .thead{
+        font-size: 16px;
+        background: #f8f8f8;
+        color: #888;
+        width: 760px;
+        height: 30px;
+        line-height: 30px;
+        padding: 4px 10px;
+        margin: 0;
+    }
+@mixin right{
+    float: left;
+    margin-left: 100px;
+    margin-top: 120px;
+    margin-right: 0;
+    p{
+        color: #000;
+        font-weight: bold;
+    }
+    input{
+        color: #fff;
+        width: 80px;
+        height: 35px;
+        margin-top: 10px;
+        background-image: linear-gradient(to right,rgb(219, 86, 119),rgb(233, 139, 170),rgb(230, 139, 177),rgb(192, 61, 94))
+    }
+}
+.right{
+    @include right;
+}
+@mixin bottom {
+    width: 990px;
+    height: 51px;
+    margin: 30px auto 0;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #777;
+    border-top: solid 2px #ce3c3b;
+    ul{
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    ul>li{
+        float: left;
+        width: 100px;
+        padding: 0 5px;
+        margin-top: 5px;
+        font-size: 12px;
+        height: 16px;
+        line-height: 16px;
+    }
+    ul>li:hover a{
+        color: red;
+        text-decoration: underline;
+    }
+}
+.bottom{
+    @include bottom;
+}
+.footer{
+    width: 550px;
+    margin: 0 auto;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer a{
+    color: #777;
+    font-size: 12px;
+}
+.footer span{
+    font-size: 20px;
+    color: #c00;
+    font-weight: 700;
+}
+.footer a:hover{
+    color: red;
+    text-decoration: underline;
+}
